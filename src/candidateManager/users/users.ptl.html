@@ -1,0 +1,10 @@
+<h1>Users</h1>
+
+<ul class="users">
+	<li ng-repeat="user in users">
+		<a href="#/Users/{{user.employeeid}}" class="thumb"><img src="images/avatar.jpg"></a>
+		<p><span><a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=fernando.sendmail@gmail.com">{{user.ufname}}@tekmexico.com</span></a><button>edit</button></p>
+		<p><span>Role: {{user.role}}</span><span>Employee id: {{user.employeeid}}</span></p>
+	</li>
+</ul>
+<a href="#/addUser"><button>Add User</button></a>

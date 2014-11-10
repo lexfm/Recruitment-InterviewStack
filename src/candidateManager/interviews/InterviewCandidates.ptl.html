@@ -1,0 +1,77 @@
+<div class="candidate">
+	<span class="hide">
+		View:<select>
+		<optgroup label="Predefined custom views">
+			<option>All Candidates</option>
+			<option>Only hot candidates</option>
+			<option>Only my candidates</option>
+		</optgroup>
+		<optgroup label="Userdefined custom views">
+			<option>Zael Haro</option>
+		</optgroup>
+	</select>
+</span><br/>
+
+<input type="button" value="Add to List" ng-click="showCandidatesList();">
+
+		or <input type="button" ng-click="cancel();" value="Cancel"></a>
+<hr id="dotted">
+<table id="allcandidates">
+	<tbody>
+
+		<tr class="toprow">
+			<th class="toprowdata hide"><a href="" ng-click="sorter='CandidateId'; reverse=!reverse ">Candidate Id</a></th>
+			<th class="toprowdata"><a href="" ng-click="sorter='FirstName'; reverse=!reverse ">First name <span class="sub3">Click to sort</span></a></th>
+			<th class="toprowdata"><a href="" ng-click="sorter='LastName'; reverse=!reverse ">Last Name <span class="sub3">Click to sort</span></a></th>
+			<th class="toprowdata"><a href="" ng-click="sorter='EmailId'; reverse=!reverse ">Email ID <span class="sub3">Click to sort</span></a></th>
+			<th class="toprowdata hide"><a href="" ng-click="sorter='MainPhoneNumber'; reverse=!reverse ">Main Phone Number</a></th>
+			<th class="toprowdata hide"><a href="" ng-click="sorter='ResumeStatus'; reverse=!reverse ">Resume Status</a></th>
+			<th class="toprowdata hide"><a href="" ng-click="sorter='DateAdded'; reverse=!reverse ">Date added</a></th>
+			<th class="toprowdata hide"><a href="" ng-click="sorter='State'; reverse=!reverse ">State</a></th>
+
+		</tr>
+		<tr ng-repeat="c in candidates.GetCandidatesListResult | orderBy:sorter:reverse">
+			<td class="hide"><input type="checkbox" ng-click="addRemoveCandidate($index);">{{c.CandidateId}}</td>
+			<td>{{c.FirstName}}</td>
+			<td>{{c.LastName}}</td>
+			<td>{{c.EmailId}}</td>
+			<td class="hide">{{c.MainPhone}}</td>
+			<td class="hide">{{c.ResumeStatus}}</td>
+			<td class="hide">{{c.DateAdded | date: short}} </td>
+			<td class="hide">{{c.State}}</td>
+		</tr>
+	</tbody>
+</table>
+
+<div class="sidediv">
+	<div class="hide">
+		<img id="seerelatedhelp" href="" src="images/seerelatedhelp.JPG"><br>	
+		<span id="search-span">Search</span><br>
+		<input type="text" size="27" name="CandidateSearch" ng-model="search" ng-enter="gosearch()"><img id="search" ng-click="gosearch()"src="images/searchicon.png"><br>
+		<p class="sub1">You can use "AND", "OR" and "NOT" for combination search</p><br>
+		<a href=""><span id="advanced-search">Advanced Search</span></a><br><br><br>
+		<hr>
+	</div>
+	<ul class="asidelist1">
+		
+		<a class="sidelistlink" href=""><li><img class="imglink" src="images/exporticon.JPG">Export all candidates</li></a>
+			
+	</ul>
+	<hr>
+	<div id ="underside">
+		<b>Filter by</b><br>
+		<span class="asidelabel">Candidate for associated job opening</span><br>
+		<select>
+			<option ng-repeat="j in jobs" value="j">
+				{{j}}
+			</option>
+		</select><br>
+		<span><b class="asidelabel">Recent Status</b><span><br>
+			<select>
+				<option ng-repeat="s in status" value="s">
+					{{s}}
+				</option>
+			</select><br>
+		</div>
+	</div>
+</div>

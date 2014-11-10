@@ -1,0 +1,22 @@
+{
+    "users":[
+        {
+            "ufname": "Dk",
+            "ulname": "Singh",
+            "role": "recruiter admin",
+            "employeeid": "1"
+        },
+        {
+            "ufname": "Zael",
+            "ulname": "Haro",
+            "role": "recruiter",
+            "employeeid": "2"
+        },
+        {
+            "ufname": "Jesus",
+            "ulname": "Rivas",
+            "role": "recruiter",
+            "employeeid": "3"
+        }
+    ]
+}

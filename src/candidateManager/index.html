@@ -1,0 +1,80 @@
+<!doctype html>
+<html ng-app='candidateManager'>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Candidate Manager</title>
+  <link rel="stylesheet" href="styles/landing.css">
+  
+  
+  <link rel="author" href="humans.txt">
+</head>
+<body>
+  <header>
+    <img src="images/tekmexico.JPG">
+      <nav class="header-nav">
+        <ul class="header-list">
+          <li id="user">user@domain.com</li>
+          <li>Zoho Apps</li>
+          <li>What's new</li>
+          <li>Upgrade</li>
+          <li>Contact Support</li>
+          <li>My Account</li>
+          <li>Help</li>
+          <li>Sign Out</li>
+        <a href="#/Recent_Activity"><li class="tab responsive" rel="tab1" ng-click="selected=1" ng-class="{'active': selected==1}">Recent Activity</li></a>
+        <a href="#/Clients"><li class="tab responsive" rel="tab2" ng-click="selected=2" ng-class="{'active': selected==2}" >Clients</li></a>
+        <a href="#/Candidates"><li class="tab responsive" rel="tab3" ng-click="selected=3" ng-class="{'active': selected==3}">Canditates</li></a>
+        <a href="#/Interviews"><li class="tab responsive" rel="tab4" ng-click="selected=3" ng-class="{'active': selected==4}">Interviews</li></a>
+        <a href="#/Calender"><li class="tab responsive" rel="tab5" ng-click="selected=3" ng-class="{'active': selected==5}">Calender</li></a>
+        <a href="#/Users"><li class="tab responsive" rel="tab6" ng-click="selected=6" ng-class="{'active': selected==6}">Users</li></a>
+        <a href="#/Reports"><li class="tab responsive" rel="tab7" ng-click="selected=3" ng-class="{'active': selected==7}">Reports</li></a>
+        </ul>
+        <a href="#" id="pull"><span>Menus and Views </span><img id="menu" src="images/icon-navicon.png"><span></a>
+      </nav>
+    
+  </header>
+      <ul class="content-ul" ng-init="selected=4">
+        <a href="#/Recent_Activity"><li class="tab" rel="tab1" ng-click="selected=1" ng-class="{'active': selected==1}">Recent Activity</li></a>
+        <a href="#/Clients"><li class="tab" rel="tab2" ng-click="selected=2" ng-class="{'active': selected==2}" >Clients</li></a>
+        <a href="#/Candidates"><li class="tab" rel="tab3" ng-click="selected=3" ng-class="{'active': selected==3}">Canditates</li></a>
+        <a href="#/Interviews"><li class="tab" rel="tab4" ng-click="selected=4" ng-class="{'active': selected==4}">Interviews</li></a>
+        <a href="#/Calender"><li class="tab" rel="tab5" ng-click="selected=3" ng-class="{'active': selected==5}">Calender</li></a>
+        <a href="#/Users"><li class="tab" rel="tab6" ng-click="selected=6" ng-class="{'active': selected==6}">Users</li></a>
+        <a href="#/Reports"><li class="tab" rel="tab7" ng-click="selected=3" ng-class="{'active': selected==7}">Reports</li></a>
+      </ul>
+  <div id="content">
+
+    <div id="template_container" ng-view>
+    </div>
+
+  </div>    	
+
+  <footer>
+    <img src="images/tekmexico.JPG">
+  </footer>
+  <script type="text/javascript" src="jQuery/1.11.1.min.js"></script>
+  <script type="text/javascript" src="candidates/menuscript.js"></script>
+  <script type="text/javascript" src="Angular/v1.2.18/angular.js"></script>
+  <script type="text/javascript" src="Angular/v1.2.18/angular-resource.js"></script>
+  <script type="text/javascript" src="Angular/v1.2.18/angular-route.js"></script>
+  <script type="text/javascript" src="candidateManagerModule.js"></script>
+  <script type="text/javascript" src="routes.js"></script>
+  <script type="text/javascript" src="clients/ClientSrvc.js"></script>
+  <script type="text/javascript" src="clients/clientCtrl.js"></script>
+  <script type="text/javascript" src="candidates/ngEnter.js"></script>
+  <script type="text/javascript" src="candidates/CandidateSrvc.js"></script>
+  <script type="text/javascript" src="candidates/candidateCtrl.js"></script>
+  <script type="text/javascript" src="recentactivity/RecentActSrvc.js"></script>
+  <script type="text/javascript" src="recentActivity/recentActivityCtrl.js"></script>
+  <script type="text/javascript" src="users/UserSrvc.js"></script>
+  <script type="text/javascript" src="users/usersCtrl.js"></script>
+   <script type="text/javascript" src="interviews/interviewSrvc.js"></script>
+  <script type="text/javascript" src="interviews/interviewCtrl.js"></script>
+  
+
+
+
+</body>
+</html>

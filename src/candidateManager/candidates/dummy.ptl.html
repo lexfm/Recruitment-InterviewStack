@@ -1,0 +1,74 @@
+<div class="candidate"><a id="top"></a>
+	
+	<p>	<a href=""ng-click="goback();">&LT;&LT;Go back</a>
+		<p>
+			<span class="right"><span id="moreaction">More actions</span><span class="right"> 
+			<img class="arrow" src="images/left arrow.JPG"> <img class="arrow" src="images/right arrow.JPG"></span></span>
+			<span class="right hide"><label for="emailoptout">Email Opt Out</label><input name="emailoptout" class="right" type="checkbox" ></span></p>
+			<hr>
+			<span class="candidatename">{{candidate[0].FirstName}} {{candidate[0].LastName}}</span><br>
+			<span class="responsive">{{candidate[0].MainPhone}}</span><a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to={{candidate[0].EmailId}}"><span>{{candidate[0].EmailId}}</span></a><br>
+		</p>
+
+		<details>
+			<summary>more</summary>
+
+			<h5>Basic Info</h5>
+			<a class="edit" href="#/Candidates/{{candidate[0].CandidateId}}/editCandidate">Edit</a>
+			<br>
+			<hr>
+		</p><span class="tags">Additional Info: </span> <span>{{candidate[0].AdditionalInfo}}</span><p> 
+	</p><span class="tags">Email Subject: </span> <span>{{candidate[0].EmailSubject}}</span> <p>
+</p><span class="tags">Candidate ID: </span> <span>{{candidate[0].CandidateId}}</span> <p>
+</p><span class="tags">Details of Resume</span> <span>{{candidate[0].DetailResume}}</span><p>
+</p><span class="tags">Mobile</span> <span>{{candidate[0].Mobile}}</span><p>
+</p><span class="tags">SkypeId</span> <span>{{candidate[0].SkypeId}}</span><p>
+</p><span class="tags">City</span> <span>{{candidate[0].City}}</span><p>
+</p><span class="tags">State</span> <span>{{candidate[0].State}}</span><p>
+</p><span class="tags">Zip Code</span> <span>{{candidate[0].ZipCode}}</span><p>
+
+<h5>Other Fields</h5>
+<a class="edit" href="#/Candidates/{{candidate[0].CandidateId}}/editCandidate">Edit</a>
+<br>
+<hr>
+</p><span class="tags">Experience</span> <span>{{candidate[0].Experience}}</span><p>
+</p><span class="tags">Qualifications</span> <span>{{candidate[0].Qualifications}}</span><p>
+
+<h6>Professional Details</h6>
+<a class="edit" href="#/Candidates/{{candidate[0].CandidateId}}/editCandidate">Edit</a>
+<br>
+<hr>
+</p><span class="tags">Interview Time:</span> <span>{{candidate[0].InterviewTime}}</span><p>
+</p><span class="tags">Interview Date Time:</span> <span>{{candidate[0].InterviewDateTime}}</span><p>
+</p><span class="tags">Parsed Skillset:</span> <span>{{candidate[0].ParsedSkills}}</span><p>
+</p><span class="tags">Job Title</span> <span>{{candidate[0].JobTitle}}</span><p>
+
+
+<button ng-click="top();">Go to Top</button>
+
+</details>
+
+<nav id="bottom-nav">
+	<ul>
+		<a href=""><li class="tab" ng-click="selected=1" ng-class="{'active': selected==1}">Activities</li></a>
+		<a href=""><li class="tab" ng-click="selected=2" ng-class="{'active': selected==2}">Emails</li></a>
+		<a href=""><li class="tab" ng-click="selected=3" ng-class="{'active': selected==3}">Events</li></a>
+	</ul>
+</nav>
+<div class="bottom-content" ng-show="selected==1"><h1>No Activities</h1></div>
+<div class="bottom-content" ng-show="selected==2"><h1>No Emails</h1></div>
+<div class="bottom-content" ng-show="selected==3"><h1>No Events<h1></div>
+
+</div>
+
+<div class="sidediv">
+	Interviews(0)
+	<hr>
+	<br>
+	Associated Jobs(0)
+	<hr>
+	<br>
+	<a target="_blank" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to"><img class="imglink" src="images/mail.JPG">Forward to client</a>
+
+</div>
+

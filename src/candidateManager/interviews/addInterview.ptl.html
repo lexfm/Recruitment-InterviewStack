@@ -1,0 +1,93 @@
+<div id="intContainer">
+<div class="addInter">
+	
+	<span id="scheduler">Schedule Interview</span>
+	<form novalidate name="addinterviewform">
+	<span id='pickCandidate'ng-click="chooseCandidates();"><a href="#/addinterviewcandidate">Click here</a> to choose a candidate</span><br/>
+	<ul>
+		
+		<li ng-repeat="c in candidatesChosen">
+			<h3>{{c.Can.CandidateId}} {{c.Can.FirstName}} {{c.Can.LastName}}</h3>
+		</li>
+		
+	</ul>
+	<!--<label for="candidate">*Select Candidate</label><br/>
+	<select class="extendedControls" name="candidate" id="sel" ng-model="newinterview.IntCandidate" required>
+  		<option value="1">Adrian Gonzalez</option> 
+  		<option value="2">Cesar Navarro</option>
+	</select>-->
+	<br/>
+	<label for="intdate">*Interview Date</label><br/>
+	<input type="date" id="datepicker" name="intdate" ng-model="datetime.date" required>
+	<span> at the time</span>
+	<select name="hour" ng-model="datetime.hour">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+		<option value="11">11</option>
+		<option value="12">12</option>
+	</select>
+	
+
+	<select name="minute" id='min' ng-model="datetime.minute">
+		<option value="00">00</option>
+		<option value="15">15</option>
+		<option value="30">30</option>
+		<option value="45">45</option>		
+	</select>
+	
+ 
+	<select name="time" ng-model="datetime.moment">
+		<option>AM</option>
+		<option>PM</option>	
+	</select> 
+	<span>And interview duration</span>
+	<select name="hour" ng-model="datetime.duration">
+		<option value="1">15 minutos</option>
+		<option value="2">30 minutos</option>
+		<option value="3">45 minutos</option>
+		<option value="4">1 hora</option>
+		<option value="5">2 horas</option>
+		<option value="6">3 horas</option>		
+	</select>
+	<br/>
+	<label for="client">*Choose the client</label><br/>
+	<select class="extendedControls" name="client" ng-model="newinterview.IntClient">
+		<option value="13">Google</option>
+		<option value="14">Fedex</option>
+		</select><br/>
+	<label for="jobopening">*Select Opening</label><br/>
+	<select name="jobopening" class="extendedControls"ng-model="newinterview.IntJobOpening" ng-options="obj.value as obj.text for obj in jobops" required></select><br/>
+	<label for="interviewer">*Interviewer</label><br>
+	<select class="extendedControls" name="interviewer" ng-model="newinterview.InterviewerId" requires>
+		<option value="1">Alex Fimbres</option>
+		<option value="2">Omar Merida</option>
+		<option value="3">Martha Mendoza</option>
+		</select><br/>
+	<label for="type">*Type</label><br/>
+	<select class="extendedControls" name="type" ng-model="newinterview.InterviewType" required>
+		<option value="Online">Online</option>
+		<option value="In Person">In Person</option>
+		<option value="Telephone">Telephone</option>
+		</select><br/>
+		<span>Venue</span><br>
+		<input class="extendedControls" type="text" ng-model="newinterview.IntVenue"><br/>
+		<span>Comments</span><br/>
+		<textarea class="extendedControls" rows="3" name="comments" ng-model="newinterview.IntComments"></textarea>
+</form>
+<div id="buttons">
+		<input type="button" value="Schedule" ng-click="addinterview();" ng-disabled="addinterviewform.$invalid||newinterview.IntCandidate==''">
+
+		or <input type="button" ng-click="cancel();" value="Cancel"></a>
+	</div>
+</div>
+</div>
+<div class="sidediv"><div class="hide">
+<img id="seerelatedhelp" href="" src="images/seerelatedhelp.JPG"></div>

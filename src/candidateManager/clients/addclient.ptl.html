@@ -1,0 +1,21 @@
+<form name="addclient">
+	<fieldset>
+		<legend>Add a New Client</legend>
+		Client: <input name="client" type="text" required><br>
+		Contact Number: <input  type="text" name="contactnum"><br>
+		Fax: <input type="text" name="clientfax"><br>
+		Website:<input type="url" name="clienturl"><br>
+		Industry: <select>
+					<option ng-repeat="i in industries" value={{i}}>
+						{{i}}
+					</option>
+				</select><br>
+		About: <input type="text" name="about"><br>
+		Client Manager: <select></select><br>
+		Assigned Recruiter:<select></select><br>
+
+		Contact Address<input type="text" name="caddress"><br>
+		Created on: <input type="date" name="created"><br>
+
+	</fieldset>
+</form>

@@ -1,0 +1,19 @@
+<form name="adduserform">
+	<fieldset>
+		<legend>Add User</legend>	
+		First Name:<input type="text" name="newufname" ng-model="uname" required ><br>
+		Last Name:<input type="text" name="newulname" ng-model="ulname" required ><br>
+		Email: <input type="email" name="newumail" ng-model="uemail" required><br>
+		Role <select>
+		<option>Recruiter Admin</option>
+		<option>Recruiter</option>
+		<option selected>Guest</option>
+	</select><br>
+	<input type="button" value="Save" ng-click="addUser();" ng-disabled="adduserform.$invalid">
+
+	or <input type="button" ng-click="cancel();" value="Cancel"></a>
+</fieldset>
+</form>
+
+adduserform.$invalid {{adduserform.$invalid}} <br>
+

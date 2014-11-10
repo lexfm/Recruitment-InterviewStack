@@ -1,0 +1,16 @@
+<div class="client_list">
+	<h1 class="a_title">Clients</h1>
+	<table>
+		<tbody>
+			<tr>
+				<td>Client</td>
+				<td>Contact member</td>
+			</tr>
+			<tr ng-repeat="client in clients">
+				<td><a href="">{{client.name}}</a></td>
+			</tr>
+
+		</tbody>
+	</table>
+	<a href="#/addclient"><button>Add Client</button></a>
+</div>

@@ -1,0 +1,87 @@
+<div class="candidate">
+	<div class="interviews">
+		<span>
+	<input type="checkbox" name="option1" value="Milk"> Only my Interviews
+<input type="checkbox" name="option2" value="Butter"> Only My Candidates	
+		<span class="interfilters">
+			<div>Scheduled</div><div class="interfilters"> <select>
+			<option>All</option>
+			<option>Today</option>
+			<option>Tomorrow</option>
+			<option>Yesterday</option>
+			<option>One Week</option>
+			<option>One Month</option>
+		</optgroup>
+	</select></div>
+		</span>
+		
+		<span class="interfilters">
+	<div >Status</div> <div class="interfilters"> <select>
+		
+			<option>All</option>
+			<option>Pending</option>
+			<option>Completed</option>
+			
+		</optgroup>
+	</select></div>
+	</span>
+	<span class="interfilters">
+	<div>Client</div> <div class="interfilters"> <select>
+			<option>All</option>
+			<option>Ebay</option>
+			<option>Google</option>
+			<option>Fedex</option>
+			<option>Sibatel</option>
+			
+		</optgroup>
+	</select>
+	</div>
+	</span>
+	
+</span>
+</div>
+
+<br>
+<hr id="linear">
+<div id="ShowInterviews" ng-init='predicate="IntDate"'>
+ <button ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1">
+        Previous
+    </button>
+    {{currentPage+1}}/{{numberOfPages()}}
+    <button ng-disabled="currentPage >= interviews.GetInterviewsListResult.length/pageSize - 1" ng-click="currentPage=currentPage+1">
+        Next
+    </button>
+
+<interview ng-repeat="i in interviews.GetInterviewsListResult|orderBy:predicate:true|startFrom:currentPage * pageSize | limitTo:pageSize"></interview>
+
+ <button ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1">
+        Previous
+    </button>
+    {{currentPage+1}}/{{numberOfPages()}}
+    <button ng-disabled="currentPage >= interviews.GetInterviewsListResult.length/pageSize - 1" ng-click="currentPage=currentPage+1">
+        Next
+    </button>
+</div>
+
+
+<div class="sidediv">
+	<div class="hide">
+		<img id="seerelatedhelp" href="" src="images/seerelatedhelp.JPG"><br>	
+		<span id="search-span">Search</span><br>
+		<input type="text" size="27" name="CandidateSearch" ng-model="search" ng-enter="gosearch()"><img id="search" ng-click="gosearch()"src="images/searchicon.png"><br>
+		<p class="sub1">You can use "AND", "OR" and "NOT" for combination search</p><br>
+		<a href=""><span id="advanced-search">Advanced Search</span></a><br><br><br>
+		<hr>
+	</div>
+	<ul class="asidelist1">
+		<a class="sidelistlink" href="#/addinterview"><li><img class="imglink" src="images/scheduleinterview.PNG">Schedule Interview</li></a>
+		
+		<a class="sidelistlink" href=""><li><img class="imglink" src="images/exporticon.JPG">Export this view</li></a>
+			
+	</ul>
+	<hr>
+	<div id ="underside">
+		
+		</div>
+	</div>
+</div>

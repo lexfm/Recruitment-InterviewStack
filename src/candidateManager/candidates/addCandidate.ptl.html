@@ -1,0 +1,135 @@
+<div class="candidate">
+	<h3>Adding Candidate</h3>
+	<span class="req"> *Fields in red are required</span>
+	<form novalidate name="addcandidateform">
+		<details open>
+			<summary><b>Basic Info</b></summary>
+			<fieldset>
+				<table class="addcandidate">
+					<tr>
+						<td><label for="AdditionalInfo">Additional Info:</label></td>
+						<td><textarea rows="3" name="AdditionalInfo" ng-model="newcandidate.AdditionalInfo" ></textarea></td>
+					</tr>
+					<tr>
+						<td><label class="req" for="EmailSubject">Email subject:*</label></td>
+						<td><textarea rows="3" name="EmailSubject" ng-model="newcandidate.EmailSubject" required></textarea></td>
+					</tr>
+					<tr>
+						<td><label class="req" for="FirstName">First Name:*</label></td>
+						<td><input type="text" name="FirstName" ng-model="newcandidate.FirstName" required></td>
+					</tr>
+					<tr>
+						<td><label class="req" for="LastName">Last Name:*</label></td>
+						<td><input type="text" name="LastName" ng-model="newcandidate.LastName" required></td>
+					</tr>
+<!-- 					<tr>
+						<td><label for="CandidateId">Candidate ID: </label></td>
+						<td><input type="text" name="CandidateId" ng-model="newcandidate.CandidateId" required></td>
+					</tr> -->
+					<tr>
+						<td><label for="MainPhone">Main Phone Number: </label></td>
+						<td><input type="text" name="MainPhone" ng-model="newcandidate.MainPhone"></td>
+					</tr>
+					<tr>
+						<td><label class="req" for="DetailResume">Detail Resume:* </label></td>
+						<td><textarea rows="3" name="DetailResume" ng-model="newcandidate.DetailResume" required></textarea></td>
+					</tr>
+					<tr>
+						<td><label class="req" for="DateAdded">Date added:* </label></td>
+						<td><input type="date" name="DateAdded" ng-model="newcandidate.DateAdded" required></td>
+					</tr>
+					<tr>
+						<td><label class="req" for="ResumeStatus">Resume Status:*</label></td>
+						<td>
+							<select name="ResumeStatus" ng-model="newcandidate.ResumeStatus" required>
+								<option value="New" selected>New</option>
+								<option value="Old" >Old</option>
+								<option value="InProcess" >In Process</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="Mobile">Mobile:</label></td>
+						<td><input type="text" name="Mobile" ng-model="newcandidate.Mobile"></td>
+					</tr>
+					<tr>
+						<td><label class="req" for="EmailId">Email ID:* </label></td>
+						<td><input type="email" name="EmailId" ng-model="newcandidate.EmailId" required></td>
+					</tr>
+					<tr>
+						<td><label for="SkypeId">Skype ID: </label></td>
+						<td><input type="text" name="SkypeId" ng-model="newcandidate.SkypeId"></td>
+					</tr>
+					<tr>
+						<td><label class="req" for="City">City:* </label></td>
+						<td><input type="text" name="DateAdded" ng-model="newcandidate.City" required></td>
+					</tr>
+					<tr>
+						<td><label class="req" for="State">State:*</label></td>
+						<td><input type="text" name="State" ng-model="newcandidate.State" required></td>
+					</tr>
+					<tr>
+						<td><label class="req" for="ZipCode">Zip:* </label></td>
+						<td><input type="text" name="ZipCode" ng-model="newcandidate.ZipCode" required></td>
+					</tr>
+				</table>
+			</fieldset>
+		</details>
+
+		<details open>
+			<summary><b>Other Fields</b></summary>
+			<fieldset>
+				<table class="addcandidate">
+					<tr>
+						<td><label class="req" for="Experience">Experience:*</label></td>
+						<td><textarea rows="4" name="Experience" ng-model="newcandidate.Experience" required></textarea></td>
+					</tr>
+					<tr>
+						<td><label class="req" for="Qualifications">Qualifications:*</label></td>
+						<td><textarea rows="4" name="Qualifications" ng-model="newcandidate.Qualifications" required></textarea></td>
+					</tr>
+				</table>
+			</fieldset>
+		</details>
+
+		<details id="bottomdetail" open>
+			<summary><b>Professional Details</b></summary>
+			<fieldset>
+				<table class="addcandidate">
+					<tr>
+						<td><label for"InterviewTime">Interview Time:</label></td>
+						<td><input type="time" name="InterviewTime" ng-model="newcandidate.InterviewTime"></td>
+					</tr>	
+					<tr>
+						<td><label for="InterviewDateTime">Interview Date Time:</label></td>
+						<td><input type="date" name="InterviewDateTime" ng-model="newcandidate.InterviewDateTime"></td>
+					</tr>
+					<tr>
+						<td><label class="req" for="ParsedSkills">Parsed Skill Set:*</label></td>
+						<td><textarea rows="3" name="ParsedSkills" ng-model="newcandidate.ParsedSkills" required></textarea></td>
+					</tr>
+					<tr>
+						<td><label for="JobTitle"> Job Title:</label></td>
+						<td><select name="JobTitle"ng-model="newcandidate.JobTitle"><option>Select</option></select></td>
+					</tr>
+				</table>
+			</fieldset>
+		</details>
+
+	</form>
+	<div id="buttons">
+		<input type="button" value="Save" ng-click="addcandidate();" ng-disabled="addcandidateform.$invalid">
+
+		or <input type="button" ng-click="cancel();" value="Cancel"></a>
+	</div>
+</div>
+<div class="sidediv">
+	<ul class="asidelist">
+		<a class="sidelistlink" href=""><img class="imglink hide" src="images/addcandidate.JPG"><li>List Candidate</li></a>
+		<a class="sidelistlink" href=""><img class="imglink hide" src="images/importcandidate.JPG"><li>Import Candidate</li></a>
+		<a class="sidelistlink" href=""><img class="imglink hide" src="images/importfromdocument.JPG"><li>Import from document</li></a>
+		<a class="sidelistlink" href=""><img class="imglink hide" src="images/customize.JPG"><li id="textbelow1">Customize the candidate detail</li></a>
+		<p class="sub">you can customize the candidate form fields &amp; configure the mail alert</p>
+	</ul>
+
+</div>

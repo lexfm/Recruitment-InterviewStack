@@ -1,0 +1,22 @@
+c:\users\alejandro\documents\visual studio 2013\Projects\InterviewAPI\InterviewService\obj\Debug\InterviewService.csprojResolveAssemblyReference.cache
+c:\users\alejandro\documents\visual studio 2013\Projects\InterviewAPI\InterviewService\bin\InterviewService.dll.config
+c:\users\alejandro\documents\visual studio 2013\Projects\InterviewAPI\InterviewService\bin\InterviewService.dll
+c:\users\alejandro\documents\visual studio 2013\Projects\InterviewAPI\InterviewService\bin\InterviewService.pdb
+c:\users\alejandro\documents\visual studio 2013\Projects\InterviewAPI\InterviewService\bin\EntityFramework.dll
+c:\users\alejandro\documents\visual studio 2013\Projects\InterviewAPI\InterviewService\bin\EntityFramework.SqlServer.dll
+c:\users\alejandro\documents\visual studio 2013\Projects\InterviewAPI\InterviewService\bin\InterviewAPI.dll
+c:\users\alejandro\documents\visual studio 2013\Projects\InterviewAPI\InterviewService\bin\EntityFramework.xml
+c:\users\alejandro\documents\visual studio 2013\Projects\InterviewAPI\InterviewService\bin\EntityFramework.SqlServer.xml
+c:\users\alejandro\documents\visual studio 2013\Projects\InterviewAPI\InterviewService\bin\InterviewAPI.pdb
+c:\users\alejandro\documents\visual studio 2013\Projects\InterviewAPI\InterviewService\obj\Debug\InterviewService.dll
+c:\users\alejandro\documents\visual studio 2013\Projects\InterviewAPI\InterviewService\obj\Debug\InterviewService.pdb
+C:\RecruitManager\InterviewService\bin\InterviewService.dll.config
+C:\RecruitManager\InterviewService\bin\InterviewService.dll
+C:\RecruitManager\InterviewService\bin\InterviewService.pdb
+C:\RecruitManager\InterviewService\bin\EntityFramework.xml
+C:\RecruitManager\InterviewService\bin\EntityFramework.SqlServer.xml
+C:\RecruitManager\InterviewService\bin\InterviewAPI.pdb
+C:\RecruitManager\InterviewService\obj\Debug\InterviewService.csprojResolveAssemblyReference.cache
+C:\RecruitManager\InterviewService\obj\Debug\InterviewService.dll
+C:\RecruitManager\InterviewService\obj\Debug\InterviewService.pdb
+C:\RecruitManager\InterviewService\bin\InterviewAPI.dll

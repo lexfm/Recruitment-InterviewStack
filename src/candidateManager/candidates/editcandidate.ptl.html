@@ -1,0 +1,130 @@
+<div class="candidate">
+	<h3>Editing Candidate</h3>
+	<form novalidate name="editcandidateform">
+		<details open>
+			<summary><b>Basic Info</b></summary>
+			<fieldset>
+				<table class="addcandidate">
+					<tr>
+						<td><label for="AdditionalInfo">Additional Info:</label></td>
+						<td class="editcandidate"><textarea rows="3" name="AdditionalInfo" ng-model="candidate[0].AdditionalInfo" ></textarea></td>
+					</tr>
+					<tr>
+						<td><label for="EmailSubject">Email subject:</label></td>
+						<td class="editcandidate"><textarea rows="3" name="EmailSubject" ng-model="candidate[0].EmailSubject" ></textarea></td>
+					</tr>
+					<tr>
+						<td><label for="FirstName">First Name:</label></td>
+						<td class="editcandidate"><input type="text" name="FirstName" ng-model="candidate[0].FirstName"></td>
+					</tr>
+					<tr>
+						<td><label for="LastName">Last Name:*</label></td>
+						<td class="editcandidate"><input type="text" name="LastName" ng-model="candidate[0].LastName"></td>
+					</tr>
+<!-- 					<tr>
+						<td><label for="CandidateId">Candidate ID: </label></td>
+						<td><input type="text" name="CandidateId" ng-model="candidate[0].CandidateId" required></td>
+					</tr> -->
+					<tr>
+						<td><label for="MainPhone">Main Phone Number: </label></td>
+						<td class="editcandidate"><input type="text" name="MainPhone" ng-model="candidate[0].MainPhone"></td>
+					</tr>
+					<tr>
+						<td><label for="DetailResume">Detail Resume: </label></td>
+						<td class="editcandidate"><textarea rows="3" name="DetailResume" ng-model="candidate[0].DetailResume"></textarea></td>
+					</tr>
+					<tr>
+						<td><label for="DateAdded">Date added:* </label></td>
+						<td class="editcandidate"><input type="date" name="DateAdded" ng-model="candidate[0].DateAdded"></td>
+					</tr>
+					<tr>
+						<td><label for="ResumeStatus">Resume Status:</label></td>
+						<td class="editcandidate">
+							<select name="ResumeStatus" ng-model="candidate[0].ResumeStatus">
+								<option value="New" selected>New</option>
+								<option value="Old" >Old</option>
+								<option value="InProcess" >In Process</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="Mobile">Mobile:</label></td>
+						<td class="editcandidate"><input type="text" name="Mobile" ng-model="candidate[0].Mobile"></td>
+					</tr>
+					<tr>
+						<td><label for="EmailId">Email ID: </label></td>
+						<td class="editcandidate"><input type="text" name="EmailId" ng-model="candidate[0].EmailId"></td>
+					</tr>
+					<tr>
+						<td><label for="SkypeId">Skype ID: </label></td>
+						<td class="editcandidate"><input type="text" name="SkypeId" ng-model="candidate[0].SkypeId"></td>
+					</tr>
+					<tr>
+						<td><label for="City">City: </label></td>
+						<td class="editcandidate"><input type="text" name="DateAdded" ng-model="candidate[0].City"></td>
+					</tr>
+					<tr>
+						<td><label for="State">State:</label></td>
+						<td class="editcandidate"><input type="text" name="State" ng-model="candidate[0].State"></td>
+					</tr>
+					<tr>
+						<td><label for="Zip">Zip: </label></td>
+						<td class="editcandidate"><input type="text" name="ZipCode" ng-model="candidate[0].ZipCode"></td>
+					</tr>
+				</table>
+			</fieldset>
+		</details>
+
+		<details open>
+			<summary><b>Other Fields</b></summary>
+			<fieldset>
+				<table class="addcandidate">
+					<tr>
+						<td><label for="Experience">Experience:</label></td>
+						<td class="editcandidate"><textarea rows="4" name="Experience" ng-model="candidate[0].Experience"></textarea></td>
+					</tr>
+					<tr>
+						<td><label for="Qualifications">Qualifications:</label></td>
+						<td class="editcandidate"><textarea rows="4" name="Qualifications" ng-model="candidate[0].Qualifications"></textarea></td>
+					</tr>
+				</table>
+			</fieldset>
+		</details>
+
+		<details open>
+			<summary><b>Professional Details</b></summary>
+			<fieldset>
+				<table class="addcandidate">
+					<tr>
+						<td><label for"InterviewTime">Interview Time:</label></td>
+						<td class="editcandidate"><input type="time" name="InterviewTime" ng-model="candidate[0].InterviewTime"></td>
+					</tr>	
+					<tr>
+						<td><label for="InterviewDateTime">Interview Date Time:</label></td>
+						<td class="editcandidate"><input type="date" name="InterviewDateTime" ng-model="candidate[0].InterviewDateTime"></td>
+					</tr>
+					<tr>
+						<td><label for="ParsedSkillset">Parsed Skill Set:</label></td>
+						<td class="editcandidate"><textarea rows="3" name="ParsedSkillSet" ng-model="candidate[0].ParsedSkillSet"></textarea></td>
+					</tr>
+					<tr>
+						<td><label for="JobTitle"> Job Title:</label></td>
+						<td class="editcandidate" ><select name="JobTitle"ng-model="candidate[0].JobTitle"><option>Select</option></select></td>
+					</tr>
+				</table>
+			</fieldset>
+		</details>
+
+	</form>
+<!-- 	{{editcandidateform.$pristine}}
+	<br>
+	<pre>form = {{editcandidateform}}</pre> -->
+	<input type="button" value="Save" ng-click="savecandidate();" ng-disabled="editcandidateform.$pristine">
+
+
+	or <input type="button" ng-click="canceledit();" value="Cancel"></a>
+	<!-- 		adduserform.$invalid {{addcandidateform.$invalid}} --> <br>
+</div>
+<div class="sidediv">
+	<img id="seerelatedhelp" href="" src="images/seerelatedhelp.JPG"><br>	
+</div>

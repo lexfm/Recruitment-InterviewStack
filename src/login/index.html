@@ -1,0 +1,35 @@
+<!doctype html>
+<html ng-app="loginModule">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link rel="author" href="humans.txt">   
+    <link rel="stylesheet" type="text/css" href="../candidateManager/styles/login.css">    
+</head>
+<body>
+    <header id="header">
+     Tekmexico
+ </header>
+ <div id="form_container" >
+    <form id="form" ng-controller="LoginCtrl" >
+     <fieldset>
+      User e-mail<input type="text" name="user" placeholder="yourmail@tekmexico.com" ng-model="user_email"><br>
+      Password<input type="password" name="pass" placeholder="Type in your Password" ng-model="user_pass"><br>
+      <button ng-click="login();">Log in</button>
+  </fieldset>
+</form>
+</div>
+
+<footer id="log_foot">
+ (c) Tekmexico
+</footer>
+<script type="text/javascript" src="../../vendor/Angular/v1.2.18/angular.js"></script>
+<script type="text/javascript" src="../../vendor/Angular/v1.2.18/angular-resource.js"></script>
+<script type="text/javascript" src="loginModule.js"></script>
+<script type="text/javascript" src="UsersSrvc.js"></script>
+<script type="text/javascript" src="loginCtrl.js"></script>
+</body>
+
+</html>

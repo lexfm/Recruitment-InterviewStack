@@ -1,0 +1,33 @@
+/* login css stylesheet */
+
+body {
+        background: white; 
+        max-height: 100%;
+
+}
+
+#header {
+  background-color:  #C2D6D6;
+  text-align: left;
+  
+}
+
+#form_container {
+
+}
+
+#form {
+  min-width: content;
+  max-width: 28%;
+  margin-top: 5em;
+}
+
+#log_foot {
+  background: orange;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  min-width: 100%;
+  left:0;
+}
+

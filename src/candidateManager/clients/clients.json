@@ -1,0 +1,10 @@
+{ "clients" :[ 
+	{ "name" : "Paypal", "manager" : "DK Singh"},
+	{ "name" : "Amazon", "manager" : "DK Singh"},
+	{ "name" : "DirectTV", "manager" : "DK Singh"},
+	{ "name" : "Amazon", "manager" : "DK Singh"},
+	{ "name" : "Amazon", "manager" : "DK Singh"},
+	{ "name" : "Amazon", "manager" : "DK Singh"}
+
+	]
+}

@@ -1,0 +1,745 @@
+html{
+	position: relative;
+	height: 100%;
+}
+
+body {
+	max-width: 100%;
+	font-family: Verdana, sans-serif;
+	font-size: 10pt;
+	margin: 0 0 2.5em;
+}
+
+h3{
+	background:#FFF9D7;
+	padding: 1em;
+	margin: 1em 1em;
+	border: 1px solid #E2C822;
+}
+
+#allcandidates {
+	width:99.5%;
+}
+
+header {
+	height: 3.5em;
+}
+
+header img {
+	width: 120px;
+	height: auto;
+}
+
+#search{
+	cursor: pointer;
+}
+.header-nav{
+	display:inline;
+}
+
+.header-list{
+	list-style-type: none;
+	float:right;
+}
+
+.header-list li{
+	float: left;
+	color: blue;
+	cursor: pointer;
+	border-right:1px solid #CCCCCC; 
+	padding: 0px 7px;
+}
+
+.right {
+	float: right;
+	display:inline-block;
+	
+}
+
+label{
+	vertical-align:-2px;
+}
+
+#moreaction{
+	vertical-align: -4px;
+}
+span {
+	margin-left: 5px;
+	margin-right: 5px; 
+}
+
+/*Main View holder//content*/
+#content{
+	width:98.7%;
+	min-width:1000px;
+	min-height:35em;
+	position: relative;
+	padding-bottom:1em;
+	margin-bottom: 2em;
+}
+
+#template_container{
+	background:white;
+	width: 100%;
+	min-height:35em;
+	margin:0;
+	padding-left: 1em;
+	display: inline-block;
+	float:left;
+	position:relative;
+}
+
+.candidate {
+	min-height:40em;
+	max-width:74%;
+	padding-top:.5em;
+	padding-bottom: 2.5em;
+	border: 1px solid #CCCCCC;
+	border-radius: 7px;
+	box-shadow: 2px 2px 1px #E6E6E6;
+	margin: 1em 1em 0px 0px;;
+}
+
+#dotted {
+	border: dashed 1px #CCCCCC;
+
+}
+#linear {
+	border: solid 1px #CCCCCC;
+
+}
+
+/*Aside*/
+.sidediv {
+	float: right;
+	display: inline-block;
+	width: 25%;
+	height:inherit;
+	position: absolute;
+	right: 0px;
+	top : 0px;
+}
+
+.asidelist, .asidelist1{
+	list-style: none;
+}
+
+.asidelist, .asidelist1 .imglink {
+	vertical-align:sub;
+}
+
+.asidelist, .asidelist1 li {
+	margin: 10px 0px 10px 0px;
+}
+
+.sidelistlink {
+	text-decoration: none;
+	color: black;
+}
+
+.sub1{
+	font-size: 6pt;
+	color: #AAAAAA;
+	float:left;
+	margin-right: 2em;
+}
+
+.sub {
+	font-size: 6pt;
+	color: #AAAAAA;
+	margin-left:3em;
+	margin-top:0px;
+}
+
+
+.tags {
+
+	margin: 0px;
+	padding-left: 25px;
+	width:10em;
+	display: inline-block;
+	clear: none;
+}
+
+
+.asidelabel{
+	font-size: 6.5pt;
+}
+
+#above-search{
+	color:blue;
+	/*background: url()*/
+}
+
+#search-span{
+	margin-top:5px;
+	display: inline-block;
+}
+
+table{
+	border-spacing: 0px;
+}
+
+td{
+	border-right: 1px dotted #CCCCCC;
+	border-bottom: 1px dotted #CCCCCC;
+	padding: 5px 3px;
+}
+
+.toprow{
+	background-color: #E6E6E6;
+	border: 1px solid #E6E6E6;
+	text-align: center;
+}
+
+.toprow a{
+	text-decoration: none;
+	color: black;
+}
+
+.toprowdata {
+	padding: 10px;
+}
+
+.arrow {
+	cursor: pointer;
+}
+
+.client_list{
+	overflow: scroll;
+	max-height:35em;
+}
+
+#advanced-search{
+	float: right;
+	clear:left;
+	color:blue;
+	margin-right:3em;
+}
+
+/*clickable Tabs*/
+ul {
+	margin: 2px 2px 2px 0px;
+	padding: 2px 2px 2px 0px;
+	list-style-type:none;
+}
+
+.content-ul{
+	display:inline-block;
+	width:100%;
+	background: #F2F4F7;
+	padding-top: 0.5em;
+}
+
+.tab {
+	list-style-type: none;
+	float:left;
+	margin-right:2px;
+	border-bottom: none;
+	padding:5px;
+	background:#5C75AA;
+	color:white;
+
+}
+
+.comingsoon{
+	padding-left: 25%;
+	padding-top:15%;
+
+}
+
+
+/* Used in other views
+.users li {
+	clear: both;
+	height: 120px;
+	padding-top: 20px;
+	list-style: none;
+}
+
+.thumb{
+	float: left;
+	margin: -0.5em 1em 1.5em 0;
+	padding-bottom: 1em;
+	height: 100px;
+	width: 100px;
+}
+*/
+.imglink{
+	display:inline;
+
+}
+
+#bottom-nav{
+	display:inline-block;
+}
+
+.bottom-content{
+	float: none;
+}
+
+fieldset{
+	border: none;
+	background: #F5F5F5;
+}
+
+details {
+	margin-bottom: 2.5em;
+}
+
+footer{
+	max-height: 2.5em;
+	min-height: 2.5em;
+	min-width: 100%;
+	text-align:center;
+}
+
+.addcandidate td{
+	border: none;
+}
+
+.addcandidate label{
+	float:right;
+}
+
+
+.active {
+	color:black;
+	background: white;
+	border: 1px solid #CBDDF9;
+	border-bottom: none;
+}
+
+#textbelow {
+	margin-bottom:0;
+}
+
+#textbelow1 {
+	margin-bottom:0;
+}
+
+#seerelatedhelp {
+	border:1px solid #CCCCCC;
+	display:inline-block;
+	padding: 0px;
+	width: 16em;
+	padding-right:20px;
+	height: 2em;
+	cursor: pointer;
+
+}
+
+#user {
+	color: black;
+}
+
+.req {
+	color:red;
+	font-weight: bold;
+}
+
+.edit {
+	float:right;
+	margin-right:1em;
+	text-decoration: none;
+	color: blue;
+}
+
+nav a#pull {
+	display: none;
+}
+
+.responsive {
+	display:none;
+}
+
+.name {
+	text-decoration: none;
+	color: #000;
+}
+
+.sub3{
+	display:none;
+}
+
+details span {
+	width: 50%;
+	display: inline-flex;
+	word-wrap: break-word;
+}
+
+@media only screen and (min-width: 150px) and (max-width: 700px)
+{
+
+	h5 {
+		margin-bottom: 0em;
+	}
+
+	header {
+		height: auto;
+		width: 100%;
+		margin: 0em -1em 0em 0em;
+		display: inline-block;
+	}
+	header img {
+		width: 50%;
+		height: auto;
+		text-align: center;
+		margin-left: 25%;
+	}
+
+	body{
+		width: 100%;
+		font-size: 10pt;
+	}
+
+	.responsive {
+		display:block;
+	}
+
+	.content-ul {
+		display:none;
+	}
+
+	/*collapsed nav menu*/
+	nav ul {
+		display: none;
+		height: auto;
+	}
+
+	nav li {
+		display: block;
+		float: none;
+		width:100%;
+	}
+
+	nav li a{
+		border-bottom: 1px solid #576979; 
+	}
+
+	nav a#pull {
+		display: inline-block;
+		background-color: #283744;
+		width: 100%;
+		height: 44%;
+		padding: 1em 0px 2em 0px;
+		position: relative;
+		color: #FFF;
+		text-decoration: none;
+	}
+
+	.content-ul {
+		margin-top:1.5em;
+	}
+
+	/*new content views*/
+
+
+	#content{
+
+		min-width: 100%;
+		position: relative;
+		padding-bottom: 1em;
+		top:-1em;
+	}
+
+
+	#template_container{
+		background:white;
+		width: 100%;
+		margin: 0 -1em;
+		min-height:35em;
+		display: block;
+	}
+
+	.candidate {
+		max-width:90%;
+		min-height:auto;
+		margin-left: 0px;
+		margin: 0px auto;
+		width: 100%;
+		border: none;
+		border-radius: 3px;
+		box-shadow: none;
+		padding-bottom: 1em;
+	}
+
+	#allcandidates {
+		width:100%;
+		display:block;
+	}
+
+	#allcandidates thead, tbody, th, td, tr {
+		display: block;
+	}
+
+	#allcandidates thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	#allcandidates tr {
+		border: 1px solid #000;
+	}
+
+	#allcandidates td {
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 40%;
+	}
+
+	#allcandidates td:before {
+		position:absolute;
+		top:6px;
+		left: 6px;
+		width: 45;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+
+	td:nth-of-type(2):before { content: "First Name"; }
+	td:nth-of-type(3):before { content: "Last Name"; }
+	td:nth-of-type(4):before { content: "Email ID"; }
+
+	/*Aside*/
+	.sidediv {
+		display: block;
+		width: 100%;
+		position:relative;
+		height:inherit;
+		right: 0px;
+		top : 0px;
+		margin-top:1em;
+	}
+
+	.addcandidate tr {
+		width: 100%;
+	}
+
+	.addcandidate td {
+		display: table-cell;
+		width: 50%;
+	}
+
+	.addcandidate label {
+		float: none;
+	}
+
+	.asidelist1{
+		list-style: none;
+		background-color: #FFF;
+		margin: 0;
+		padding: 0px;
+		width:99%;
+		height: auto;
+		border: 2px solid #CCC;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	}
+
+	.asidelist{
+		list-style: none;
+		background-color: #FFF;
+		margin: 0em 0em 0em 0.5em;
+		padding: 0px;
+		width:98%;
+		height: auto;
+		border: 2px solid #CCC;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	}
+
+	.asidelist li, .asidelist1 li {
+		text-align: center;
+		width:100%;
+		height: auto;
+		padding: 1em 0px;
+		margin: 0px;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	}
+
+	.asidelist a, .asidelist1 a {
+		width:100%;
+		display: block;
+
+	}
+
+	.asidelist li:hover, .asidelist1 li:hover {
+		background-color: #CCC;
+	}
+
+
+
+	.sidelistlink img {
+		display: none;
+	}
+
+	#textbelow {
+		margin-bottom: 0px;
+	}
+
+	/* misc*/
+	#seerelatedhelp, #advanced-search, #underside, .sub, .sub1, .hide {
+		display: none;
+	}
+
+	footer {
+		position: static;
+	}
+
+	.name {
+		color: blue;
+
+	}
+
+	.sub3{
+		display: inline;
+		font-size: 8pt;
+		color: #333;
+		margin-left: 2em;
+	}
+
+	#bottomdetail {
+		margin-bottom: 0.5em;
+	}
+
+	#buttons {
+		padding-left: 33%;
+	}
+
+	details span {
+		width: 50%;
+		display: inline-flex;
+		word-wrap: break-word;
+	}
+
+	.tags{
+		width: 9em;
+		padding-left: 0em;
+		display: inline-flex;
+		word-wrap: break-word;
+	}
+
+	td.editcandidate:before{
+		content: none;
+	}
+
+	#menu {
+		width: auto;
+		text-align: right;
+		float:right;
+		margin-right: 1em;
+	}
+
+	.header-list a li, .header-list li {
+		cursor: pointer;
+		padding: .6em 0px;
+		margin: .1em 0px;
+		text-align: center;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	}
+
+	li.tab.responsive.active {
+		color: #000;
+		border: none;
+	}
+
+}
+
+.interviews{
+	margin-left: 20em;	
+}
+
+.interfilters{
+	position:relative;
+	display: inline-block;
+
+}
+
+.interview{
+	margin-top: 10px;
+	margin-left: 1.5em;
+}
+.interBody{
+	position:relative;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 18px;
+	color:rgb(0,128,255);
+	margin-top:-5px;
+}
+.intType{
+	font-size: 14px;
+	color:rgb(0,0,0);
+	display: block;
+	height:2em;
+	vertical-align:text-bottom;
+}
+.dateFormat{
+	vertical-align: top;
+	font-size: 10px;
+	color:rgba(102,102,102, 0.9);
+	font-weight: bold;
+}
+.candiInfo{
+	vertical-align:text-top;
+	font-size: 10px;
+	color:rgba(102,102,102, 0.9);
+
+}
+.candiInfo span{
+	margin-left: 12em;
+}
+.addInter{
+	width:60em;
+	background-color:rgba(222,222,255,0.6);
+	border: 5px rgba(192,192,206, 0.8) solid;
+	padding-left: 3%;
+}
+#intContainer{
+	margin-left: 4em;
+	float:left;
+	width:62em;
+}
+#scheduler{
+	font-size: 1.5em;
+	color:rgb(0,0,0);
+	display:block;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+.addInter label{
+	color:rgb(160,6,55);
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.ui-datepicker { 
+  margin-top: 0.5em;
+  margin-left:7em;
+
+}
+.addInter textarea{margin-bottom: 6em;}
+
+.extendedControls{
+	width:48em;
+}
+.addInter select,.addInter input{
+	margin-bottom: 1.5em;
+}
+#pickCandidate{
+	color:rgba(102,102,102, 0.9);
+	font-weight: bold;
+}
+#pickCandidate a{
+	color:rgb(0,56,255);
+	text-decoration: none;
+}
